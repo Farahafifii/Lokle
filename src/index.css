@@ -1,13 +1,96 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* base styles */
+* {
+  margin: 0;
+  font-family: "Quicksand";
+  color: #333;
+}
+html, body{
+  background:#01021e;
+}
+.home {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+}
+.home h1 {
+  color: #f1356d;
+}
+ .links {
+  margin-left: auto;
+}
+.home a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+.home a:hover {
+  color: #f1356d;
+}
+.content {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+}
+fieldset{
+  border:none;
+  width:500px;
+  margin:0px auto;
+  }
+
+.login p{
+  margin-top:20px;
+  margin-bottom:0px;
+  font-size:15px;
+  color:white;
+}
+.login input{
+  outline:none;
+  display:inline-block;
+  margin-right: auto;
+  margin-left: auto;
+  height:50px;
+  vertical-align:center;
+  position:center;
+  bottom:20px;
+  right:9px;
+  border-radius:22px;
+  border-width: 2px;
+  border-color: rgb(127, 255, 253);
+  width: 350px;
+  box-sizing:border-box;
+  padding:0 18px; 
+  background-color: rgb(52, 50, 75);
+  color: white;
+}
+.login input[type="checkbox"] {
+  color:white;
+  vertical-align: left;
+  height: 20px;
+  width: 20px;
+  margin-top: 10px;
+}
+.login label1{
+  color:white;
+  font-size:15px;
+  margin-top:10px;
+  margin-bottom:0px;
+}
+.login h1 {
+  position:center;
+  text-align: center;
+  vertical-align:middle;
+  color: rgb(127, 255, 253);
+  font-size: 60px;
+}
+.home h1{
+  text-align:center;
+  color:#fff;
+  font-weight:100;
+  font-size:2em; 
+  margin-bottom:10px;
 }
