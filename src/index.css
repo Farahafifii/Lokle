@@ -8,10 +8,15 @@
 }
 html, body{
   background:#01021e;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
 }
 
 .content {
-  max-width: 600px;
+  max-width: 650px;
   margin: 40px auto;
   position: absolute;
   vertical-align: middle;
