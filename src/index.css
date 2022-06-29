@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
-
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css');
 /* base styles */
 * {
   margin: 0;
@@ -172,4 +172,67 @@ h1:after {
   font-weight:100;
   font-size:2em; 
   margin-bottom:10px;
+}
+
+.social-container {
+  padding-left: 20px;
+  width: 100%;
+  height: 100vh;
+  display: inline-block;
+  place-items: center;
+}
+
+.social-icons {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin: 0.15em;
+  position: relative;
+  font-size: 1.2em;
+}
+
+.social-icons i {
+  padding-left: 22px;
+  color: #fff;
+  position: absolute;
+  top: 21px;
+  left: 21px;
+  transition: all 265ms ease-out;
+}
+
+.social-icons a {
+  display: inline-block;
+}
+
+.social-icons a::before {
+  transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  content: " ";
+  width: 100px;
+  height: 60px;
+  border-radius: 22px;
+  display: block;
+  background: rgb(52, 50, 75);
+  transition: all 265ms ease-out;
+}
+
+.social-icons a:hover::before {
+  transform: scale(0);
+  transition: all 265ms ease-in;
+}
+
+.social-icons a:hover i {
+  transform: scale(2);
+  -ms-transform: scale(2);
+  -webkit-transform: scale(2);
+  color: #fff;
+  background: rgb(127, 255, 253);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 265ms ease-in;
 }

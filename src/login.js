@@ -31,8 +31,9 @@ export default class login extends React.Component {
     render() {
          return ( 
             <div className="login">
-                 <nav><Link to="/Home" className="text-Link">Skip{' >'}  </Link></nav>
-                 <br/>
+                <nav><Link to="/Home" className="text-Link">Skip{' >'}  </Link></nav>
+                <br/>
+                <body>
                 <nav name="login"><h1>Lokle</h1>
                 <p>Mobile Number</p>
                 <input className="e-input" value={this.state.mobile} type="text" name="mobile" placeholder="Enter mobile Number" onChange={(data)=>{this.setState({mobile:data.target.value})}} />
@@ -45,9 +46,17 @@ export default class login extends React.Component {
                 <br/>
                 <nav><Link to="/Home"><button onClick={()=>{this.submit()}} className="button_Login">LOGIN</button> </Link></nav>
                 <br/>
-                <nav name="acc"><p name="p2">Don't Have an account? </p><Link to="/signup" className="text-LinkSign">{" "}SignUp Here</Link></nav>
+                <nav name="acc"><p name="p2">Don't Have an account? </p><Link to="/register" className="text-LinkSign">{" "}SignUp Here</Link></nav>
                 <br/>
                 <h1 name="h1">You Can Login With</h1>
+                <div class="social-container">
+                      <ul class="social-icons">
+                      <li><a href = {"#"}><i class="fa fa-facebook"></i></a></li>
+                      <li><a href = {"#"}><i class="fa fa-google"></i></a></li>
+                      <li><a href = {"#"}><i class="fa fa-apple"></i></a></li>
+                      </ul>
+                </div>
+                </body>
                 </div>
                 
          )
