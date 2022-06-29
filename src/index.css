@@ -9,30 +9,12 @@
 html, body{
   background:#01021e;
 }
-.home {
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  max-width: 600px;
-  margin: 0 auto;
-  border-bottom: 1px solid #f2f2f2;
-}
-.home h1 {
-  color: #f1356d;
-}
 
-.home a {
-  margin-left: 16px;
-  text-decoration: none;
-  padding: 6px;
-}
-.home a:hover {
-  color: #f1356d;
-}
 .content {
   max-width: 600px;
   margin: 40px auto;
-  padding: 20px;
+  position: absolute;
+  vertical-align: middle;
 }
 .login p{
   margin-top:20px;
@@ -41,6 +23,7 @@ html, body{
   color:white;
 }
 .login input{
+  padding-left: 100px;
   outline:none;
   display:inline-block;
   margin-right: auto;
@@ -60,13 +43,13 @@ html, body{
   color: white;
 }
 .login input[type="checkbox"] {
-  color:white;
   vertical-align: left;
   height: 20px;
   width: 20px;
+  accent-color: rgb(127, 255, 253);
   margin-top: 10px;
 }
-.login label1{
+.login label[name="label2"]{
   color:white;
   font-size:15px;
   margin-top:10px;
@@ -76,11 +59,10 @@ html, body{
   margin-top: 10px;
   position:center;
   text-align: center;
-  vertical-align:middle;
+  vertical-align:center;
   color: rgb(127, 255, 253);
   font-size: 60px;
-  float: none;
-  
+
 }
 .text-Link {
   color: inherit;
@@ -115,23 +97,74 @@ html, body{
   font-size: 20px;
   font-weight: bold;
 }
-.login p2 {
+.login p [name="p2"] {
   margin-top:20px;
+  text-decoration: none;
   margin-bottom:0px;
   font-size:15px;
   color:white;
   vertical-align:center;
   position:center;
   text-align: center;
+  display: flex;
 
+}
+.login nav[name="body"] {
+  vertical-align:center;
+  position:center;
+  text-align: center;
+  display:inline-block;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: auto;
 }
 .text-LinkSign{
   color: inherit;
-  float:right;
   color: rgb(178,240,240);
+  text-decoration: inherit;
+  text-decoration: underline;
+  display: flex;
   font-size: 15px;
-  margin-top:-20px;
   font-weight: bold;
+  justify-content: center;
+  margin-top: 17px;
+  margin-left: 2px;
+}
+.login nav[name="acc"]{
+  vertical-align:center;
+  position:center;
+  text-align: center;
+  display:inline-block;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: -15px;
+}
+h1[name="h1"] {
+  display: flex;
+  flex-direction: row;
+  font-size: 15px;
+  color: white;
+  font-weight: normal;
+}
+h1:before, h1:after{
+  content: "";
+  flex: 1 1;
+  border-bottom: 1px solid;
+  margin: auto;
+  font-size: 30px;
+  color: rgb(178,240,240);
+}
+h1:before {
+  margin-right: 10px;
+  font-size: 30px;
+  color: rgb(178,240,240);
+}
+h1:after {
+  margin-left: 10px;
+  font-size: 30px;
+  color: rgb(178,240,240);
 }
 .home h1{
   text-align:center;

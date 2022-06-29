@@ -5,10 +5,11 @@ import {
   BrowserRouter as 
   Router,
   Switch,
-  Route,
   Redirect,
+  Route,
   Routes
 } from "react-router-dom";
+//
   
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
       <div className="content">
       <BrowserRouter>
      <Routes>
-      <Route path="/" element={<Login />}>
+      <Route path="/login" element={<Login />}>
            </Route>
       <Route path="/Home" element={<Home />}> </Route>
          </Routes>
