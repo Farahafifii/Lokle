@@ -8,11 +8,7 @@
 }
 html, body{
   background:#01021e;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  width: 100%;
+  
 }
 
 .content {
@@ -180,6 +176,7 @@ h1:after {
 }
 
 .social-container {
+  padding-top: 10px;
   padding-left: 20px;
   width: 100%;
   height: 100vh;

@@ -49,6 +49,7 @@ export default class login extends React.Component {
                 <nav name="acc"><p name="p2">Don't Have an account? </p><Link to="/register" className="text-LinkSign">{" "}SignUp Here</Link></nav>
                 <br/>
                 <h1 name="h1">You Can Login With</h1>
+                <br/>
                 <div class="social-container">
                       <ul class="social-icons">
                       <li><a href = {"#"}><i class="fa fa-facebook"></i></a></li>
