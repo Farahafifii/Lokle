@@ -238,3 +238,74 @@ h1:after {
   -webkit-text-fill-color: transparent;
   transition: all 265ms ease-in;
 }
+
+
+.social-container2 {
+  padding-top: 10px;
+  padding-left: 150px;
+  width: 100%;
+  vertical-align:center;
+  position:center;
+  text-align: center;
+  display:inline-block;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons2 {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+}
+
+.social-icons2 li {
+  display: flex;
+  margin: 0.15em;
+  position: relative;
+  font-size: 1.2em;
+}
+
+.social-icons2 i {
+  margin-left: -5px;
+  margin-top:-10px;
+  color:  rgba(173, 251, 251, 0.964);
+  position: absolute;
+  top: 21px;
+  left: 21px;
+}
+
+.social-icons2 a {
+  display: flex;
+  transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  content: " ";
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background: rgb(52, 50, 75);
+}
+
+.selectOption{
+  padding-left: 100px;
+  outline:none;
+  display:inline-block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 25px;
+  height:50px;
+  vertical-align:center;
+  position:center;
+  bottom:20px;
+  right:9px;
+  border-radius:22px;
+  border-width: 2px;
+  border-color: rgb(127, 255, 253);
+  width: 175px;
+  box-sizing:border-box;
+  padding:0 18px; 
+  background-color: rgb(52, 50, 75);
+  color: white;
+}
+
