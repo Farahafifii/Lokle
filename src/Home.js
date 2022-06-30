@@ -13,20 +13,6 @@ export default class Home extends React.Component {
 
     submit(){
         console.log(this.state);
-        let url= "https://www.getpostman.com/collections/4460c9c18f0d3b6c4f51";
-        let data = this.state;
-        fetch(url,{
-            method:"POST",
-            headers:{
-                "Content-Type":"application/json",
-                "Accept":"application/json"
-            },
-            body:JSON.stringify(data)
-             }).then((result)=>{
-                result.json().then((resp)=>{
-                    console.warn(resp);
-             })
-            })
     }
     
     render() {
