@@ -93,7 +93,7 @@ export default class register extends React.Component {
                 </nav>
                 <br/>
                 <br/>
-                <nav><Link to="/Home"><button onClick={()=>{this.submit()}} className="button_Login">SIGN UP</button> </Link></nav>
+                <nav><Link to="/login"><button onClick={()=>{this.submit()}} className="button_Login">SIGN UP</button> </Link></nav>
                 <br/>
                 </body>
                 </div>
